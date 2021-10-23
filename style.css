@@ -1,0 +1,16 @@
+body{
+    background-color: #e5e5e5;
+}
+
+.nav-link::after,
+a.nav-link::after{
+    border-bottom: 2px solid var(--color-icon-nav-active);
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform .2s ease-in-out;
+    width: 100%;
+
+}
