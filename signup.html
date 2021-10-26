@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daystar Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/tailwind.css">
+    
+</head>
+<body class="">
+
+
+    <div class="grid grid-cols-2 w-full h-screen">
+        <div class="bg-indigo-900 shadow-lg hidden lg:block"></div>
+
+
+        <div class="bg-white col-span-2 lg:col-span-1">
+            <div class=" flex flex-col w-full space-y-4 overflow-hidden px-10 lg:px-20 rounded-lg">
+                    <div class="flex items-center justify-center pt-8">
+                        <img class=" " src="/images/logo.png" alt="">
+                    </div>
+               
+         
+
+            
+        <h1 class="text-center font-sans font-medium text-3xl text-indigo-900">Sign Up</h1>
+         
+
+            <form class="w-full lg:px-10">
+  <div class="flex flex-wrap mb-6">
+    <div class="w-full px-3 mb-6 md:mb-0">
+      <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="firstname">
+        Name
+      </label>
+      <input id="name" class="appearance-none block w-full  text-gray-700 shadow-sm  border focus:border-indigo-700  rounded py-3 px-4 mb-3 leading-tight text-xs focus:outline-none focus:bg-indigo-100 focus:ring-indigo-700 focus:ring-1"  type="text" placeholder="John">
+     
+    </div>
+
+  </div>
+
+    <div class="flex flex-wrap mb-4">
+    <div class="w-full  px-3 mb-6 md:mb-0">
+      <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="">
+      Email
+      </label>
+      <input id="email" class="appearance-none block w-full  text-gray-700 hadow-sm    border focus:border-indigo-700  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-indigo-100 focus:ring-indigo-700 focus:ring-1 text-xs"  type="email" placeholder="john@gmail.com">
+     
+    </div>
+
+  </div>
+
+
+      <div class="flex flex-wrap  mb-4">
+    <div class="w-full  px-3 mb-6 md:mb-0">
+      <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="number">
+      Password
+      </label>
+
+      <div class=" relative">
+    <input id="password" v-model="password" class="appearance-none block w-full  text-gray-700 shadow-sm   border focus:border-indigo-700  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-indigo-100 focus:ring-indigo-700 focus:ring-1 text-xs"   placeholder="password">
+
+    <div class="absolute inset-y-0 right-5 flex text-sm items-center">
+
+      <div class="cursor-pointer"  type="password">
+        <svg  width="25" height="25" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.58203 7.0001C1.58203 7.0001 5.55581 1.57703 12.5099 1.57703C19.464 1.57703 23.4378 7.0001 23.4378 7.0001C23.4378 7.0001 19.464 12.4232 12.5099 12.4232C5.55581 12.4232 1.58203 7.0001 1.58203 7.0001Z" stroke="black" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5096 9.03374C14.1556 9.03374 15.49 8.12324 15.49 7.00008C15.49 5.87693 14.1556 4.96643 12.5096 4.96643C10.8636 4.96643 9.5293 5.87693 9.5293 7.00008C9.5293 8.12324 10.8636 9.03374 12.5096 9.03374Z" stroke="black" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div>
+
+
+
+    </div>
+      </div>
+
+
+     
+    </div>
+
+  </div>
+
+
+        <div class="flex flex-wrap mb-4">
+    <div class="w-full  px-3 mb-6 md:mb-0">
+      <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="number">
+      Confirm Password
+      </label>
+
+
+    <div class=" relative">
+    <input id="confirm-password" class="appearance-none block w-full shadow-sm    text-gray-700  border focus:border-indigo-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-indigo-100 focus:ring-indigo-700 focus:ring-1 text-xs"  type="password"  placeholder="confirm password">
+
+    <div class="absolute inset-y-0 right-5 flex text-sm items-center">
+
+      <div  class="cursor-pointer" type="password">
+        <svg  width="25" height="25" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.58203 7.0001C1.58203 7.0001 5.55581 1.57703 12.5099 1.57703C19.464 1.57703 23.4378 7.0001 23.4378 7.0001C23.4378 7.0001 19.464 12.4232 12.5099 12.4232C5.55581 12.4232 1.58203 7.0001 1.58203 7.0001Z" stroke="black" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5096 9.03374C14.1556 9.03374 15.49 8.12324 15.49 7.00008C15.49 5.87693 14.1556 4.96643 12.5096 4.96643C10.8636 4.96643 9.5293 5.87693 9.5293 7.00008C9.5293 8.12324 10.8636 9.03374 12.5096 9.03374Z" stroke="black" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div>
+
+
+
+    </div>
+      </div>
+
+
+     
+    </div>
+
+  </div>
+
+<div class="flex flex-wrap mb-4">
+  <div class="w-full flex items-center justify-center px-3 mb-6 md:mb-0">
+
+    <div class="privacy-check flex items-center justify-center space-x-2 text-xs ">
+
+      <div class="flex">
+        <input id="check" type="checkbox"   name="check"  class="checked:bg-wiifarm-500">
+      </div>
+
+      <div>
+<p>I agree to the <a href="#" class="text-wiifarm-600">Terms of Use</a> & <a href="#" class="text-wiifarm-600">Privacy Policy</a> </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+  <div class="flex justify-center mb-4">
+<button class=" bg-indigo-900 py-3 w-full rounded-md text-white">Register</button>
+  </div>
+
+     <div class="flex flex-wrap mb-6">
+  <div class="w-full flex items-center justify-center px-3 mb-6 md:mb-0">
+
+    <div class="privacy-check flex items-center justify-center space-x-2 text-xs ">
+       <p>Already have an account ? <a href="/login.html" class="text-indigo-800 hover:underline">Login here.</a></p>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+          </form>
+
+
+
+          </div>
+
+        </div>
+    </div>
+  
+   
+</body>
+</html>
