@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daystar Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/tailwind.css">
+    
+</head>
+<body>
+    <div class="header w-full py-3 md:px-10 bg-white flex items-center flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8 top-0 shadow-md ">
+
+        <div class="flex justify-between w-full md:w-40  px-4">
+            <div class="logo flex justify-center">
+                <img class="object-contain" src="/images/logo.png" alt="" srcset="">
+            </div>
+    
+            <div class="mobile md:hidden">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                </button>
+            </div>
+        </div>
+       
+
+        <div class="flex hidden md:block flex-1 ">
+
+            <div class="md:flex space-y-8 md:space-y-0  justify-between">
+                <div class=" bg-gray-200 flex items-center rounded-lg ">
+                    <input class="bg-gray-200 rounded-l-lg  w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search....">
+                    
+                  
+                      <button class="p-3" >
+                          <img src="/icons /search.svg" alt="" srcset="" >
+                      </button>
+                    
+                    </div>
+          
+                      <div class="nav-link flex md:space-x-8 ">
+                  
+      
+                        <ul class="nav-link flex  list-none space-x-8 items-center ">
+      
+                      
+                            <li class="flex items-center">
+                                <a href="/groups.html" class="flex items-center flex-col justify-center text-sm h-12 w-20 no-underline">
+                                <img src="/icons /group.svg" alt="" srcset="">
+                                <span>Groups</span>
+                            </a>
+                            </li>
+      
+                            <li class="flex items-center">
+                              <a href="/events.html" class="flex items-center flex-col justify-center text-sm h-12 w-20 no-underline">
+                                  <img src="/icons /timeline.svg" alt="" srcset="">
+                                  <span>Events</span>
+                              </a>
+                          </li>
+            
+                            <li class="flex items-center">
+                                <a href="/councelling.html" class="flex items-center flex-col justify-center text-sm h-12 w-20 no-underline"> 
+                                    <img src="/icons /laughing.svg" alt="" srcset="">
+                                    <span>Councelling</span>
+                                </a>
+                
+                            </li>
+            
+                            
+            
+                           
+                        </ul>
+                      </div>
+      
+                      <div class="righ-nav">
+                  <ul class="flex items-center justify-center space-x-4">
+                      <li class="rounded-full flex items-center  p-3 relative bg-indigo-900">
+                          <img class="w-4 h-4" src="/icons /chat.svg" alt="" srcset="">
+      
+      
+                           <div class="notification-counter absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full items-center justify-center flex">
+                           <span  class="text-xs text-white cursor-pointer">1</span>
+                           </div>
+                      </li>
+          
+                      <li class="rounded-full p-3 bg-indigo-900 relative">
+                          <img class="w-4 h-4 " src="/icons /bell.svg" alt="" srcset="">
+      
+                          <div class="notification-counter absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full items-center justify-center flex">
+                              <span  class="text-xs text-white cursor-pointer">4</span>
+                              </div>
+                      </li>
+          
+                      <li class=" flex  items-center space-x-2">
+                          <img class="  w-10 h-10  object-cover rounded-full" src="https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                          <span>Temidayo</span>
+                          <img src="/icons /down.svg" alt="" srcset="">
+      
+                          
+                      </li>
+                  </ul>
+                 
+                  
+                    </div>
+      
+            </div>
+            
+        </div>
+        
+           
+
+    </div>
+
+
+    <main class=" m-10">
+      <div class="bg-white rounded-md p-8 space-y-4 shadow-md">
+          
+
+         
+      </div>
+    </main>
+    
+</body>
+</html>
